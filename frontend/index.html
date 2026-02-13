@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOGIN SECTION -->
+<div id="loginSection" class="container mt-5">
+    <div class="card p-4 shadow">
+        <h3 class="text-center">Task Management System</h3>
+        <input type="email" id="email" class="form-control mt-3" placeholder="Email">
+        <input type="password" id="password" class="form-control mt-3" placeholder="Password">
+        <button onclick="login()" class="btn btn-primary mt-3 w-100">Login</button>
+    </div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboardSection" class="hidden">
+    <div class="row g-0">
+
+        <div class="col-md-2 sidebar">
+            <h4>Dashboard</h4>
+            <button onclick="showHome()">Home</button>
+            <button onclick="showProjects()">Projects</button>
+            <button onclick="showTasks()">Tasks</button>
+            <button onclick="loadAnalytics()">Analytics</button>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+
+        <div class="col-md-10 content-area">
+            <div id="contentArea">
+                <h2>Welcome 👋</h2>
+                <p>Select an option from sidebar.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background: #f4f6f9;
+}
+
+.hidden {
+    display: none;
+}
+
+.sidebar {
+    background: #2f3e4e;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    background: #445a70;
+    color: white;
+    border-radius: 5px;
+}
+
+.sidebar button:hover {
+    background: #556f8a;
+}
+
+.logout-btn {
+    background: #dc3545 !important;
+}
+
+.content-area {
+    padding: 30px;
+}
+
+.dashboard-card {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
