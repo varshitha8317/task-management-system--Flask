@@ -8,8 +8,9 @@ class Config:
 
     #database config
 
-    SQLALCHEMY_DATABASE_URI=os.getenv("DATABASE_URL","mysql+pymysql://root:Varshitha%40123@localhost:3306/advanced_task_manager")
-    SQLALCHEMY_TRACK_MODIFICATIONS=False
+    SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    
 
     #jwt authentication config
 
